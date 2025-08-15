@@ -157,8 +157,8 @@ jobs:
 
     - name: Own commands
       run: |
-        ls -l ${{ github.event.inputs.DEVICE_PATH }}
-        ls -l ${{ github.event.inputs.DEVICE_PATH }}/prebuilt/
+        ls -l /home/runner/work/Action-TWRP-Builder/Action-TWRP-Builder/workspace/${{ github.event.inputs.DEVICE_PATH }}
+        ls -l /home/runner/work/Action-TWRP-Builder/Action-TWRP-Builder/workspace/${{ github.event.inputs.DEVICE_PATH }}/prebuilt/
 
     - name: Building recovery
       run: |
