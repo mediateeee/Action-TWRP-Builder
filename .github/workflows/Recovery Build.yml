@@ -152,6 +152,11 @@ jobs:
       with:
         swap-size-gb: 12
 
+    - name: Own commands
+      run: |
+        ls -l ${{ github.event.inputs.DEVICE_PATH }}
+        ls -l ${{ github.event.inputs.DEVICE_PATH }}/prebuilt/
+
     - name: Building recovery
       run: |
         source build/envsetup.sh
