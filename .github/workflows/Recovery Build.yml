@@ -159,6 +159,7 @@ jobs:
       run: |
         ls -l /home/runner/work/Action-TWRP-Builder/Action-TWRP-Builder/workspace/${{ github.event.inputs.DEVICE_PATH }}
         ls -l /home/runner/work/Action-TWRP-Builder/Action-TWRP-Builder/workspace/${{ github.event.inputs.DEVICE_PATH }}/prebuilt/
+        cp -a /home/runner/work/Action-TWRP-Builder/Action-TWRP-Builder/workspace/${{ github.event.inputs.DEVICE_PATH }}/prebuilt/. /home/runner/work/Action-TWRP-Builder/Action-TWRP-Builder/workspace/out/target/product/rk3566_s/
 
     - name: Building recovery
       run: |
